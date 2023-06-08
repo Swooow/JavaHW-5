@@ -1,6 +1,7 @@
 package ru.netology.javaqa.JavaHW5.services;
 
 //import org.junit.jupiter.api.Test;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
@@ -8,7 +9,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 public class RestServiceTest {
 
     @ParameterizedTest
-    @CsvFileSource(files="src/test/resources/relax.csv")
+    @CsvFileSource(files = "src/test/resources/relax.csv")
     public void testRestChipCalculate(int extended, int income, int expenses, int threshold) {
         RestService service = new RestService();
 

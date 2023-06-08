@@ -16,9 +16,9 @@ public class RestService {
             if (balance < threshold) {
                 balance = balance + income - expenses;
             } else {
-                balance = (balance - expenses)/3;
+                balance = (balance - expenses) / 3;
                 relax++;
-            };
+            }
         }
         return relax;
     }
